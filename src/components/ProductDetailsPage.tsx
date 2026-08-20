@@ -181,7 +181,7 @@ export const ProductDetailsPage: React.FC = () => {
               </p>
 
               {/* Pricing Box */}
-              <div className="mt-4 p-4 rounded-2xl bg-[#FFF2F8] border border-pink-100 flex items-baseline gap-3">
+              <div className="mt-4 p-4 rounded-2xl bg-[#FFF2F8] border border-pink-100 flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <span className="text-3xl font-bold text-[#F50087]">
                   {formatPrice(selectedProduct.price)}
                 </span>
@@ -190,7 +190,7 @@ export const ProductDetailsPage: React.FC = () => {
                     MRP {formatPrice(selectedProduct.originalPrice)}
                   </span>
                 )}
-                <span className="text-xs text-neutral-500 ml-auto">
+                <span className="text-xs text-neutral-500 sm:ml-auto">
                   (Inclusive of all taxes & GST)
                 </span>
               </div>
@@ -251,7 +251,7 @@ export const ProductDetailsPage: React.FC = () => {
               </div>
 
               {/* Quantity Stepper & Stock */}
-              <div className="mt-6 flex items-center gap-4">
+              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
                 <span className="text-xs font-semibold text-neutral-800">Quantity:</span>
                 <div className="flex items-center border border-neutral-200 rounded-xl bg-white">
                   <button
